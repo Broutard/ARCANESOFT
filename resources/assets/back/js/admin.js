@@ -29,9 +29,11 @@ Vue.component('todo-list', require('./components/TodoList/TodoList.vue'));
 
 const app = new Vue({
     el: '#app',
+
     data: {
         widgets: window.App.widgets
     },
+
     mounted() {
         $(() => {
             // Fix for IE page transitions
@@ -47,6 +49,7 @@ const app = new Vue({
             this.init()
         });
     },
+
     methods: {
         init() {
             let options = window.App.options;
